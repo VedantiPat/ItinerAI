@@ -5,7 +5,7 @@ import streamlit as st
 import datetime
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "enter API key here"
 os.environ["OPENAI_MODEL_NAME"]="gpt-4o-mini"
 
 
