@@ -1,0 +1,7 @@
+crewai
+textwrap3
+langchain-community
+duckduckgo_search
+streamlit
+langchain.tools
+amadeus
