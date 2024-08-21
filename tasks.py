@@ -2,7 +2,7 @@ from crewai import Task
 
 from textwrap3 import dedent
 from tools import AmadeusTools
-flight_offer = AmadeusTools.flight_offers_search
+flight_search = AmadeusTools.flight_offers_search
 
 
 
@@ -196,7 +196,7 @@ class TravelTasks():
             expected_output=dedent(f"""\
                 Consolidate the flight details for all three of the trips and output them together.             
             """),
-            tools=[flight_offer],
+            tools=[flight_search],
             agent=agent,
         )
     
