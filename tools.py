@@ -1,7 +1,7 @@
 from langchain.tools import tool
 from amadeus import Client, ResponseError
 # Initialize the Amadeus client
-amadeus = Client(client_id='mud8SJfItmm2zEXWVNgcQjAAWsACb9ny', client_secret='xHWDBDxjDj5BZHhe')
+amadeus = Client(client_id='enter client id here', client_secret='enter client secret here')
 
 class CalculatorTools():
 
