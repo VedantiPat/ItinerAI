@@ -10,13 +10,8 @@ The files are as follows:
 - requirements.txt : all of the dependencies required for this application
 - test.py : to test the amadeus tool seperately
 
-Couple of notes:
-- The Amadeus API is currently down, so the Amadeus call will not be functional for the time being until it is back up. You can check the status here: https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference
-- Once the API is back up, the code needs to be tested thoroughly to make sure the tool works properly in all cases. As the API is only a testing environment sandbox API, it won't have every location available for a call, so once everything is finalized app can be moved to production which has more data.
-- If the Amadeus API is not functional, another implementation option is the Skyscanner API, that can be looked into.
 
 There are some changes that need to be still implemented to this version to improve it:
-- Test the amadeus tool to ensure that it returns a valid result, see if the index call for the first index is a valid call.
 - Make sure that the flight agent does not go on a loop. Once it finds a result for each of the three destination cities, it should not make a call to the flight search tool again and should instead just consolidate the result into the flight details output.
 - Make sure that the flight ticket price outputed is in USD.
 - Currently, the best 3 cities that the best 3 agent is returning are sometimes above the budget requirements, as the approximations might be off. This is resulting in the cheapest flight ticket to be sometimes above the budget. Ensure this does not happen.
